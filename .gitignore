@@ -1,0 +1,24 @@
+# Entorno virtual
+class/
+venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dataset
+data/
+
+# Modelos pesados
+*.h5
+*.keras
+*.ckpt
+
+# Sistema
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/

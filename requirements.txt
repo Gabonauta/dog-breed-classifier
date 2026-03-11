@@ -1,0 +1,6 @@
+tensorflow
+streamlit
+Pillow
+numpy
+matplotlib
+kagglehub
