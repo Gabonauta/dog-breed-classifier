@@ -12,10 +12,6 @@ __pycache__/
 # Dataset
 data/
 
-# Modelos pesados
-*.h5
-*.keras
-*.ckpt
 
 # Sistema
 .DS_Store
