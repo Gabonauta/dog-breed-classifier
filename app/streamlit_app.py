@@ -61,3 +61,21 @@ if uploaded_file is not None:
             st.write(f"**{breed_name}** — {preds[idx] * 100:.2f}%")
 
     st.image(image, caption="Imagen subida", use_container_width=True)
+
+st.divider()
+st.subheader("Razas Soportadas")
+
+# Fetch class names from cached artifacts
+_, _, class_names = load_artifacts()
+
+# Load translation mappings
+sys.path.append(os.path.dirname(__file__))
+from translations import BREED_TRANSLATIONS
+
+table_data = []
+for full_name in class_names:
+    breed_en = full_name.split('-', 1)[-1]
+    breed_es = BREED_TRANSLATIONS.get(breed_en, breed_en)
+    table_data.append({"Nombre de Raza": breed_en, "Nombre de Raza en Español": breed_es})
+
+st.dataframe(table_data, use_container_width=True, hide_index=True)

@@ -15,7 +15,7 @@ VAL_RATIO = 0.15
 TEST_RATIO = 0.15
 
 # Pon None para usar todas las razas
-MAX_BREEDS = 10
+MAX_BREEDS = None
 
 # Imágenes máximas por raza para balancear y acelerar pruebas
 # Pon None si quieres usar todas las imágenes disponibles por raza
